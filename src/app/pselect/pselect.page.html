@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Choose where it hurts...
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div id="painChoices">
+        <ion-grid fixed="true">
+            <ion-row>
+                <ion-col>
+                <ion-button color="danger" size="large" (click)="go({type:'neck'})">Neck</ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-button color="danger" size="large" (click)="go({type:'upper'})">Upper</ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-button color="danger" size="large" (click)="go({type:'lower'})">Lower</ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-button color="danger" size="large" (click)="go({type:'no-spec'})">No specific</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>
